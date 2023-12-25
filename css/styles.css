@@ -348,6 +348,135 @@ section {
   line-height: 2;
 }
 
+.projects {
+  background: var(--black);
+}
+.projects .heading {
+  color: var(--white);
+}
+.projects .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 2rem;
+}
+.projects .box-container .box {
+  cursor: initial;
+}
+.projects .box-container .box:hover .image img {
+  transform: scale(1.1);
+}
+.projects .box-container .box .image {
+  height: 30rem;
+  overflow: hidden;
+}
+.projects .box-container .box .image img {
+  scale: 100%;
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.projects .box-container .box .content {
+  display: flex;
+  background: var(--white);
+  justify-content: space-between;
+}
+.projects .box-container .box .content .info {
+  padding: 1rem 2rem;
+}
+.projects .box-container .box .content .info h3 {
+  font-size: 1.7rem;
+  color: var(--black);
+  text-transform: capitalize;
+}
+.projects .box-container .box .content .info p {
+  font-size: 1.5rem;
+  color: var(--light-color);
+  line-height: 2;
+}
+.projects .box-container .box .content i {
+  width: 7.5rem;
+  font-size: 3rem;
+  background: var(--yellow);
+  color: var(--white);
+  cursor: pointer;
+  text-align: center;
+  line-height: 7.5rem;
+}
+
+.reviews .slide p {
+  padding: 1.5rem;
+  background: var(--light-bg);
+  position: relative;
+  margin-bottom: 3rem;
+  font-size: 1.5rem;
+  color: var(--light-color);
+  line-height: 2;
+}
+.reviews .slide p::before {
+  content: "";
+  position: var(--light-bg);
+  bottom: -1rem;
+  left: 2rem;
+  height: 2rem;
+  width: 2rem;
+  background: var(--light-bg);
+  transform: rotate(45deg);
+}
+.reviews .slide .user {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+.reviews .slide .user img {
+  height: 10rem;
+  width: 15rem;
+}
+.reviews .slide .user h3 {
+  font-size: 2rem;
+  color: var(--black);
+  text-transform: capitalize;
+}
+.reviews .slide .user .stars {
+  padding-top: 0.5rem;
+}
+.reviews .slide .user .stars i {
+  font-size: 1.4rem;
+  color: var(--yellow);
+}
+
+.contact {
+  background: var(--black);
+}
+.contact .heading {
+  color: var(--white);
+}
+.contact .row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+.contact .row .map {
+  flex: 1 1 41rem;
+  width: 100%;
+}
+.contact .row .contactus {
+  flex: 1 1 41rem;
+  background: var(--white);
+  padding: 2rem;
+}
+.contact .row .contactus h3 {
+  font-size: 2.5rem;
+  color: var(--black);
+  text-transform: capitalize;
+}
+.contact .row .contactus p {
+  font-size: 1.5rem;
+  color: var(--light-color);
+  line-height: 2;
+  color: var(--black);
+}
+
 @media (max-width: 1200px) {
   .header {
     padding: 1.5rem 2rem;

@@ -33,3 +33,21 @@ var swiper = new Swiper(".home-slider", {
       el: ".swiper-pagination",
     },
   });
+
+  var swiper = new Swiper(".reviews-slider", {
+    loop: true,
+    grabcursor: true,
+    spaceBetween: 40,
+    breakpoints: {
+        640: {
+          slidesPerView: 1,
+        },
+        768: {
+          slidesPerView: 2,
+
+        },
+        991: {
+          slidesPerView: 3,
+        },
+      },
+  });
